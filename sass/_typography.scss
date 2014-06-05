@@ -1,0 +1,93 @@
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family:'Font-Name';
+	src:url('fonts/font-name.eot');
+	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
+		url('fonts/font-name.woff') format('woff'),
+		url('fonts/font-name.ttf') format('truetype'),
+		url('fonts/font-name.svg#font-name') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+
+%heading-base {
+	font-family: $font-sans;
+	font-weight: $normal;
+	color: darken($neutralDark, 20%);
+	font-size: golden-ratio(12px, 1);
+}
+
+%smallText-base {
+	font-family: $font-serif;
+	color: $neutralDark;
+	line-height: 2.3rem;
+}
+
+.label {
+	@extend %heading-base;
+	font-family: $font-serif;
+}
+
+// .typography {
+	h1 {
+		@extend %heading-base;
+		font-size: golden-ratio(12px, 3);
+	}
+	h2 {
+		@extend %heading-base;
+		font-size: golden-ratio(12px, 2);
+	}
+	h3 {
+		@extend %heading-base;
+		font-weight: $bold;
+		font-size: 1.3em;
+	}
+	h4 {
+		@extend %heading-base;
+		color: $colorLight;
+		font-size: 1.2em;
+	}
+	h5 {
+		@extend %heading-base;
+		font-family: $font-serif;
+		font-weight: $bold;
+		font-size: 1.1em;
+	}
+	h6 {
+		@extend %heading-base;
+		color: $neutralDark;
+		font-variant: small-caps;
+	}
+	p,
+	blockquote {
+		@extend %heading-base;
+		@extend %smallText-base;  /*use http://www.pearsonified.com/typography/ calculator after have container size*/
+	}
+	li {
+		@extend p;
+		font-size: 1em;
+		font-family: $font-sans;
+	}
+	.intro,
+	blockquote {
+		color: darken($neutralDark, 10%);
+		line-height: 2.6rem;
+	}
+	blockquote {
+		font-weight: $bold;
+		font-style: italic;
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
+		border-bottom: 1px dotted $compMed;
+		&:hover {
+			color: $colorLight;
+			border-bottom: 1px dotted $colorLight;
+			transition: all .2s ease-in-out;
+		}
+	}
+// }
