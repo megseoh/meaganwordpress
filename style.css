@@ -46,6 +46,7 @@ h1 {
 
 h2 {
   font-size: 31.41509px;
+  text-align: center;
 }
 
 h3 {
@@ -54,7 +55,7 @@ h3 {
 }
 
 h4, form {
-  color: #ffbc49;
+  color: #ede7df;
   font-size: 1.2em;
 }
 
@@ -185,8 +186,47 @@ form input.button:hover, .button-big:hover, .button-small:hover, .button-inverse
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
+.featured section,
+.portfolio section, .services section {
+  float: left;
+  width: 32.11%;
+  max-width: 350px;
+  border: 10px solid #fff;
+  margin-bottom: 20px;
+  margin-right: 1.83%;
+}
+.featured section:last-child,
+.portfolio section:last-child, .services section:last-child {
+  margin-right: 0;
+}
+
 img.attachment-post-thumbnail.wp-post-image {
-  width: 25%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  transition: all 1s ease-in-out;
+}
+img.attachment-post-thumbnail.wp-post-image:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /*------------------------------------*\
@@ -261,8 +301,8 @@ input:focus {
 \*------------------------------------*/
 /* wrapper */
 .wrapper {
-  max-width: 1280px;
-  width: 95%;
+  max-width: 1400px;
+  width: 98%;
   margin: 0 auto;
   position: relative;
 }
@@ -276,21 +316,60 @@ input:focus {
 /* nav */
 .nav {
   float: right;
+  position: relative;
+  bottom: 0;
+}
+.nav ul {
+  padding-right: 0;
 }
 .nav li {
   list-style: none;
 }
 
-.innerWrapper {
+main, .footer {
   background: #ffbc49;
+}
+
+section {
+  background: lightcyan;
+  max-width: 1090px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+section figure, section figcaption {
+  display: inline-block;
+}
+section figcaption {
+  display: none;
 }
 
 /* sidebar */
 /* footer */
+.footer {
+  display: block;
+}
+
 /*------------------------------------*\
     PAGES
 \*------------------------------------*/
 /* front-page */
+.featured section,
+.portfolio section {
+  height: 230px;
+  overflow: hidden;
+}
+
+.services h2 {
+  display: block;
+}
+
+/* portfolio */
+.post-type-archive-portfolio span.date,
+.post-type-archive-portfolio span.comments {
+  display: none;
+}
+
 /* about */
 /* contact */
 /*------------------------------------*\
