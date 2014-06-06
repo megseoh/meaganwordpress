@@ -12,6 +12,7 @@
 */
 
 @import "bourbon";
+@import "mixins";
 @import "variables";
 @import "typography";
 @import "forms";
@@ -82,8 +83,9 @@ input:focus {
 
 /* wrapper */
 .wrapper {
-	max-width:1280px;
-	width:95%;
+	max-width:1400px;
+	// max-width: 1280px;
+	width:98%;
 	margin:0 auto;
 	position:relative;
 }
@@ -103,12 +105,34 @@ input:focus {
 /* nav */
 .nav {
 	float: right;
+	position: relative;
+	bottom: 0;
+	ul {
+		padding-right: 0;
+	}
 	li {
 		list-style: none;
 	}
 }
-.innerWrapper {
+main {
 	background: $colorLight;
+}
+section {
+	background: lightcyan;
+	max-width: 1090px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	figure,figcaption {
+		display: inline-block;
+	}
+	figure {
+		
+	}
+	figcaption {
+		display: none;
+		// position: absolute;
+	}
 }
 /* sidebar */
 .sidebar {
@@ -116,7 +140,8 @@ input:focus {
 }
 /* footer */
 .footer {
-
+	display: block;
+	@extend main;
 }
 
 /*------------------------------------*\
@@ -124,7 +149,33 @@ input:focus {
 \*------------------------------------*/
 
 /* front-page */
+.featured,
+.portfolio {
+	section {
+		@extend %third;
+		height: 230px;
+		overflow: hidden;
+	}
+}
 
+.services {
+	h2 {
+		display: block;
+	}
+	section {
+		@extend %third;
+	}
+}
+
+
+/* portfolio */
+
+.post-type-archive-portfolio {
+	span.date,
+	span.comments {
+		display: none;
+	}
+}
 
 
 /* about */
