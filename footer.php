@@ -1,15 +1,48 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+			<footer class="footer clear" role="contentinfo">
 
-				<?php get_template_part('searchform'); ?>
+				<div class="footerWrapper clear">
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?><!-- . <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>. -->
-				</p>
-				<!-- /copyright -->
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.svg" class="svg">
 
+					<a href="#top"><?php //get_template_part( 'img/icons/inline', 'arrow.svg' ); ?></a>
+					
+					<?php //get_template_part('searchform'); ?>
+
+					<div class="connect clear">
+
+						<h3>Contact</h3>
+						<h3>Connect</h3>
+						<h3>Create</h3>
+
+						<ul class="social_media clearfix">
+
+							<li><a href="mailto:ohara.meagan@gmail.com"><i class="fa fa-5x fa-envelope"></i></a></li>
+
+							<li><a href="http://twitter.com/megseoh" target="_blank"><i class="fa fa-5x fa-twitter"></i></a></li>
+
+							<li><a href="http://ca.linkedin.com/in/meaganeohara/" target="_blank"><i class="fa fa-5x fa-linkedin"></i></a></li>
+
+							<li><a href="http://github.com/megseoh" target="_blank"><i class="fa fa-5x fa-github-alt"></i></a></li>
+
+							<li><a href="http://instagram.com/megseoh" target="_blank"><i class="fa fa-5x fa-instagram"></i></a></li>
+
+							<li><a href="http://pinterest.com/megseoh" target="_blank"><i class="fa fa-5x fa-pinterest"></i></a></li>
+
+							<li><a href="http://codepen.io/megseoh" target="_blank"><i class="fa fa-5x fa-codepen"></i></a></li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+					<!-- copyright -->
+					<p class="copyright clear">
+						Designed &amp; coded by <?php bloginfo('name'); ?>
+						&copy; <?php echo date('Y'); ?>
+					</p>
+					<!-- /copyright -->
 			</footer>
 			<!-- /footer -->
 

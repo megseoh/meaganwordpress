@@ -2,7 +2,7 @@
 
 	<main role="main">
 		<!-- section -->
-		<section class="contact">
+		<section class="contact clear">
 
 			<h2><?php the_title(); ?></h2>
 

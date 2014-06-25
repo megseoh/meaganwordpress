@@ -1,5 +1,5 @@
 form {
-	width: 700px;
+	max-width: 1090px;
 	margin: 0 auto;
 	@extend h4;	
 	.form-title {
@@ -12,20 +12,34 @@ form {
 		margin: 10px 5px 10px 10px;
 		color: $colorMed;
 	}
+	p {
+		width: 49.5%;
+		display: inline-block;
+		padding-bottom: 20px;
+	}
 	input, textarea {
-		line-height: 2em;
-		font-weight: 100;
-		font-size: 0.8em;
-		padding-left: 5px;
-		margin: 10px;
-		color: lighten($neutralDark, 25%);
-		background: lighten($neutralLight, 10%);
-		border: 1px solid $neutralLight;
-		&:focus {
-			background: lighten($colorLight, 20%);
-			color: $neutralDark;
-			outline: none;
-		}
+		// line-height: 2em;
+		// font-weight: 100;
+		// font-size: 0.8em;
+		// padding-left: 5px;
+		// margin: 10px;
+		// text-transform: lowercase;
+		
+		// -moz-transition: all 0.2s ease-out;
+		// -o-transition: all 0.2s ease-out;
+		// -webkit-transition: all 0.2s ease-out;
+		// -ms-transition: all 0.2s ease-out;
+		// transition: all 0.2s ease-out;
+
+		// color: lighten($neutralDark, 25%);
+		// background: lighten($neutralLight, 10%);
+		// border: 1px solid $neutralLight;
+		// &:focus {
+		// 	background: lighten($compLight, 10%);
+		// 	color: $neutralDark;
+		// 	box-shadow: inset 0 0 3px 1px $compDark;
+		// 	outline: none;
+		// }
 	}
 	.textarea {
 		vertical-align: 240%; // 54px
@@ -35,5 +49,39 @@ form {
 		vertical-align: 100%;
 		margin: 0 0 0 100px;
 	}
+	button {
+		text-transform: lowercase;
+	}
+	#search-2 {
+		max-width: 350px;
+	}
+	.search {
+		margin-left: 20px;
+	}
+	.search-submit {
+		line-height: 2em;
+		font-weight: 100;
+		font-size: 0.8em;
+		padding: 0 10px;
+		margin: 10px;
+		text-transform: lowercase;
+		-moz-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+		-webkit-transition: all 0.2s ease-out;
+		-ms-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+		color: $compDark;
+		background: $compLight;
+		border: 1px solid $compMed;
+	}
+
+	span.wpcf7-not-valid-tip {
+		color: $colorDark;
+	}
 
 }
+
+// input:focus {
+// 	outline:0;
+// 	border:1px solid #04A4CC;
+// }

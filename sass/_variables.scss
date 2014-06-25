@@ -1,15 +1,16 @@
 // colours
-$colorLight: #ffbc49;	// rgb(160,231,207) or try #FFAA00
-$colorMed: #ffa149;		// rgb(89,198,192)
-$colorDark: #009b8f;		// rgb(0,155,143)
-$compLight: #ff8D49;
-$compMed: #ace3e2;		// or try #B6F0EF
-$compDark: #a1d1cd;
+$colorLight: #ffbc49;	
+$colorMed: #ffa149;		
+$colorDark: #ff8d49;		//rgba(255, 141, 73, 0.7);
+$compLight: #ace3e2;		
+$compMed: #a1d1cd;
+$compDark: #009b8f;		
 $neutralLight: #ede7df;
-$neutralDark: #705f57;
+$neutralDark: #705f57;		//rgba(112, 95, 87, 1)
 
 
 // font families
+$font-fancy: 'thirsty_roughregular_two', 'Lora', Georgia, Cambria, "Times New Roman", Times, serif;
 $font-sans: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-serif: 'Lora', Georgia, Cambria, "Times New Roman", Times, serif;
 

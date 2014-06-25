@@ -10,53 +10,213 @@
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
 */
-/*------------------------------------*\
-	TYPOGRAPHY
-\*------------------------------------*/
 @font-face {
-  font-family: 'Font-Name';
-  src: url("fonts/font-name.eot");
-  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"), url("fonts/font-name.woff") format("woff"), url("fonts/font-name.ttf") format("truetype"), url("fonts/font-name.svg#font-name") format("svg");
+  font-family: 'thirsty_roughblack';
+  src: url("fonts/thirstyroughblack-webfont.eot");
+  src: url("fonts/thirstyroughblack-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughblack-webfont.woff") format("woff"), url("fonts/thirstyroughblack-webfont.ttf") format("truetype"), url("fonts/thirstyroughblack-webfont.svg#thirsty_roughblack") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
-.label, h1, h2, h3, h4, form, h5, h6, p, li,
-blockquote {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  color: #372e2a;
-  font-size: 19.416px;
+@font-face {
+  font-family: 'thirsty_roughblack_one';
+  src: url("fonts/thirstyroughblackone-webfont.eot");
+  src: url("fonts/thirstyroughblackone-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughblackone-webfont.woff") format("woff"), url("fonts/thirstyroughblackone-webfont.ttf") format("truetype"), url("fonts/thirstyroughblackone-webfont.svg#thirsty_roughblack_one") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-p, li,
+@font-face {
+  font-family: 'thirsty_roughblack_shadow';
+  src: url("fonts/thirstyroughblackshadow-webfont.eot");
+  src: url("fonts/thirstyroughblackshadow-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughblackshadow-webfont.woff") format("woff"), url("fonts/thirstyroughblackshadow-webfont.ttf") format("truetype"), url("fonts/thirstyroughblackshadow-webfont.svg#thirsty_roughblack_shadow") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughblack_three';
+  src: url("fonts/thirstyroughblackthree-webfont.eot");
+  src: url("fonts/thirstyroughblackthree-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughblackthree-webfont.woff") format("woff"), url("fonts/thirstyroughblackthree-webfont.ttf") format("truetype"), url("fonts/thirstyroughblackthree-webfont.svg#thirsty_roughblack_three") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughblack_two';
+  src: url("fonts/thirstyroughblacktwo-webfont.eot");
+  src: url("fonts/thirstyroughblacktwo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughblacktwo-webfont.woff") format("woff"), url("fonts/thirstyroughblacktwo-webfont.ttf") format("truetype"), url("fonts/thirstyroughblacktwo-webfont.svg#thirsty_roughblack_two") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughbold';
+  src: url("fonts/thirstyroughbold-webfont.eot");
+  src: url("fonts/thirstyroughbold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughbold-webfont.woff") format("woff"), url("fonts/thirstyroughbold-webfont.ttf") format("truetype"), url("fonts/thirstyroughbold-webfont.svg#thirsty_roughbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughbold_one';
+  src: url("fonts/thirstyroughboldone-webfont.eot");
+  src: url("fonts/thirstyroughboldone-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughboldone-webfont.woff") format("woff"), url("fonts/thirstyroughboldone-webfont.ttf") format("truetype"), url("fonts/thirstyroughboldone-webfont.svg#thirsty_roughbold_one") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughbold_shadow';
+  src: url("fonts/thirstyroughboldshadow-webfont.eot");
+  src: url("fonts/thirstyroughboldshadow-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughboldshadow-webfont.woff") format("woff"), url("fonts/thirstyroughboldshadow-webfont.ttf") format("truetype"), url("fonts/thirstyroughboldshadow-webfont.svg#thirsty_roughbold_shadow") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughbold_three';
+  src: url("fonts/thirstyroughboldthree-webfont.eot");
+  src: url("fonts/thirstyroughboldthree-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughboldthree-webfont.woff") format("woff"), url("fonts/thirstyroughboldthree-webfont.ttf") format("truetype"), url("fonts/thirstyroughboldthree-webfont.svg#thirsty_roughbold_three") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughbold_two';
+  src: url("fonts/thirstyroughboldtwo-webfont.eot");
+  src: url("fonts/thirstyroughboldtwo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughboldtwo-webfont.woff") format("woff"), url("fonts/thirstyroughboldtwo-webfont.ttf") format("truetype"), url("fonts/thirstyroughboldtwo-webfont.svg#thirsty_roughbold_two") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughlight';
+  src: url("fonts/thirstyroughlight-webfont.eot");
+  src: url("fonts/thirstyroughlight-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughlight-webfont.woff") format("woff"), url("fonts/thirstyroughlight-webfont.ttf") format("truetype"), url("fonts/thirstyroughlight-webfont.svg#thirsty_roughlight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughlight_one';
+  src: url("fonts/thirstyroughlightone-webfont.eot");
+  src: url("fonts/thirstyroughlightone-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughlightone-webfont.woff") format("woff"), url("fonts/thirstyroughlightone-webfont.ttf") format("truetype"), url("fonts/thirstyroughlightone-webfont.svg#thirsty_roughlight_one") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughlight_shadow';
+  src: url("fonts/thirstyroughlightshadow-webfont.eot");
+  src: url("fonts/thirstyroughlightshadow-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughlightshadow-webfont.woff") format("woff"), url("fonts/thirstyroughlightshadow-webfont.ttf") format("truetype"), url("fonts/thirstyroughlightshadow-webfont.svg#thirsty_roughlight_shadow") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughlight_three';
+  src: url("fonts/thirstyroughlightthree-webfont.eot");
+  src: url("fonts/thirstyroughlightthree-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughlightthree-webfont.woff") format("woff"), url("fonts/thirstyroughlightthree-webfont.ttf") format("truetype"), url("fonts/thirstyroughlightthree-webfont.svg#thirsty_roughlight_three") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughlight_two';
+  src: url("fonts/thirstyroughlighttwo-webfont.eot");
+  src: url("fonts/thirstyroughlighttwo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughlighttwo-webfont.woff") format("woff"), url("fonts/thirstyroughlighttwo-webfont.ttf") format("truetype"), url("fonts/thirstyroughlighttwo-webfont.svg#thirsty_roughlight_two") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughregular_three';
+  src: url("fonts/thirstyroughregularthree-webfont.eot");
+  src: url("fonts/thirstyroughregularthree-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughregularthree-webfont.woff") format("woff"), url("fonts/thirstyroughregularthree-webfont.ttf") format("truetype"), url("fonts/thirstyroughregularthree-webfont.svg#thirsty_roughregular_three") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughregular_two';
+  src: url("fonts/thirstyroughregulartwo-webfont.eot");
+  src: url("fonts/thirstyroughregulartwo-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughregulartwo-webfont.woff") format("woff"), url("fonts/thirstyroughregulartwo-webfont.ttf") format("truetype"), url("fonts/thirstyroughregulartwo-webfont.svg#thirsty_roughregular_two") format("svg");
+  font-weight: l;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_rough_texturesregular';
+  src: url("fonts/thirstyroughtextures-webfont.eot");
+  src: url("fonts/thirstyroughtextures-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughtextures-webfont.woff") format("woff"), url("fonts/thirstyroughtextures-webfont.ttf") format("truetype"), url("fonts/thirstyroughtextures-webfont.svg#thirsty_rough_texturesregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsfonts/ty_rough_regregular';
+  src: url("fonts/thirstyroughregular-webfont.eot");
+  src: url("fonts/thirstyroughregular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughregular-webfont.woff") format("woff"), url("fonts/thirstyroughregular-webfont.ttf") format("truetype"), url("fonts/thirstyroughregular-webfont.svg#thirsty_rough_regregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughregular_one';
+  src: url("fonts/thirstyroughregularone-webfont.eot");
+  src: url("fonts/thirstyroughregularone-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughregularone-webfont.woff") format("woff"), url("fonts/thirstyroughregularone-webfont.ttf") format("truetype"), url("fonts/thirstyroughregularone-webfont.svg#thirsty_roughregular_one") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'thirsty_roughregular_shadow';
+  src: url("fonts/thirstyroughregularshadow-webfont.eot");
+  src: url("fonts/thirstyroughregularshadow-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/thirstyroughregularshadow-webfont.woff") format("woff"), url("fonts/thirstyroughregularshadow-webfont.ttf") format("truetype"), url("fonts/thirstyroughregularshadow-webfont.svg#thirsty_roughregular_shadow") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+.label, h1, h2, .nav li, h3, h4, form, h5, h6, li, .name, .blog .view-article {
+  font-family: "thirsty_roughregular_two", "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0;
+}
+
+p,
 blockquote {
   font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
   color: #705f57;
-  line-height: 2.3rem;
+  font-size: 2rem;
+  margin: 0;
 }
 
 .label {
   font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-h1 {
-  font-size: 50.82961px;
-}
-
-h2 {
-  font-size: 31.41509px;
+h2, .nav li {
+  font-size: 3.5rem;
+  text-shadow: 0px 1px 3px rgba(255, 141, 73, 0.7);
   text-align: center;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 3rem;
+  text-align: center;
 }
 
 h4, form {
-  color: #ede7df;
-  font-size: 1.2em;
+  color: #705f57;
+  font-size: 1.6rem;
 }
 
 h5 {
@@ -70,23 +230,19 @@ h6 {
   font-variant: small-caps;
 }
 
-p, li,
+p,
 blockquote {
+  line-height: 3rem;
   /*use http://www.pearsonified.com/typography/ calculator after have container size*/
 }
 
 li {
-  font-size: 1em;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
 }
 
-.intro,
 blockquote {
   color: #534741;
   line-height: 2.6rem;
-}
-
-blockquote {
   font-weight: 700;
   font-style: italic;
 }
@@ -94,16 +250,94 @@ blockquote {
 a {
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px dotted #ace3e2;
 }
 a:hover {
-  color: #ffbc49;
-  border-bottom: 1px dotted #ffbc49;
+  color: #ace3e2;
+  border-bottom: 1px dotted #ace3e2;
   transition: all .2s ease-in-out;
+}
+a:focus {
+  outline: 0;
+}
+a::active {
+  outline: 0;
+}
+
+/* header */
+.name {
+  color: #705f57;
+}
+
+.selectedNav {
+  color: #ace3e2;
+}
+
+/* footer */
+.footer p {
+  color: #fff;
+}
+
+/* general */
+section > h2:first-child,
+.blog > h2:first-child {
+  padding: 0 0 55px 0;
+}
+
+/* front-page */
+.services h3 {
+  font-size: 2rem;
+  text-shadow: 0px 0px 2px rgba(112, 95, 87, 0.7);
+  padding-bottom: 5%;
+}
+
+/* front-page */
+.portfolio h2 {
+  padding-bottom: 30px;
+}
+.portfolio h3 {
+  text-align: left;
+  font-size: 2rem;
+  color: #705f57;
+}
+.portfolio h3, .portfolio p {
+  padding-bottom: 20px;
+}
+.portfolio .details {
+  padding: 20px;
+}
+
+/* about */
+.about p {
+  padding-bottom: 20px;
+}
+.about .skills {
+  display: block;
+  width: 100%;
+  padding: 0 0 55px 0;
+}
+
+/* blog */
+.blog h2 {
+  padding: 50px 0;
+}
+.blog .view-article {
+  font-size: 2rem;
+  padding-left: 20px;
+}
+
+/* sidebar */
+.sidebar h3 {
+  padding: 10px;
+  margin-bottom: 25px;
+  background: url("img/icons/long_banner.svg") no-repeat;
+  text-shadow: 0px 0px 2px rgba(112, 95, 87, 0.7);
+}
+.sidebar .twitter_title_link {
+  color: #fff;
 }
 
 form {
-  width: 700px;
+  max-width: 1090px;
   margin: 0 auto;
 }
 form .form-title, form input.button, form .button-big, form .button-small, form .button-inverse {
@@ -116,20 +350,10 @@ form label {
   margin: 10px 5px 10px 10px;
   color: #ffa149;
 }
-form input, form textarea {
-  line-height: 2em;
-  font-weight: 100;
-  font-size: 0.8em;
-  padding-left: 5px;
-  margin: 10px;
-  color: #af9f98;
-  background: white;
-  border: 1px solid #ede7df;
-}
-form input:focus, form textarea:focus {
-  background: #ffe2af;
-  color: #705f57;
-  outline: none;
+form p {
+  width: 49.5%;
+  display: inline-block;
+  padding-bottom: 20px;
 }
 form .textarea {
   vertical-align: 240%;
@@ -138,13 +362,41 @@ form input.button {
   vertical-align: 100%;
   margin: 0 0 0 100px;
 }
+form button {
+  text-transform: lowercase;
+}
+form #search-2 {
+  max-width: 350px;
+}
+form .search {
+  margin-left: 20px;
+}
+form .search-submit {
+  line-height: 2em;
+  font-weight: 100;
+  font-size: 0.8em;
+  padding: 0 10px;
+  margin: 10px;
+  text-transform: lowercase;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: #009b8f;
+  background: #ace3e2;
+  border: 1px solid #a1d1cd;
+}
+form span.wpcf7-not-valid-tip {
+  color: #ff8d49;
+}
 
 form input.button, .button-big, .button-small, .button-inverse {
   font-weight: 100;
   background: #ffa149;
   color: #fff;
   box-shadow: inset 0 0 0 2px rgba(237, 231, 223, 0.2);
-  border: solid 1px #009b8f;
+  border: solid 1px #ff8d49;
   padding: 10px 50px;
   display: inline-block;
   border-radius: 3px;
@@ -186,20 +438,28 @@ form input.button:hover, .button-big:hover, .button-small:hover, .button-inverse
 /*------------------------------------*\
     IMAGES
 \*------------------------------------*/
-.featured section,
-.portfolio section, .services section {
+.about figure, .featured section,
+.portfolio section, .services section, .details {
   float: left;
-  width: 32.11%;
+  width: 32.11009%;
   max-width: 350px;
-  border: 10px solid #fff;
-  margin-bottom: 20px;
-  margin-right: 1.83%;
-}
-.featured section:last-child,
-.portfolio section:last-child, .services section:last-child {
-  margin-right: 0;
 }
 
+.portfolio-images,
+.aboutme, div.blog,
+div.post {
+  width: 66.05505%;
+  max-width: 720px;
+}
+
+.featured section,
+.portfolio section, .services section {
+  border: 10px solid #fff;
+  margin-bottom: 20px;
+  margin-right: 1.83486%;
+}
+
+/* portfolio */
 img.attachment-post-thumbnail.wp-post-image {
   display: inline-block;
   width: 100%;
@@ -216,17 +476,46 @@ img.attachment-post-thumbnail.wp-post-image {
   transform: scale(1);
   transition: all 1s ease-in-out;
 }
-img.attachment-post-thumbnail.wp-post-image:hover {
+
+/* about */
+.about figure img.profile {
+  border: 10px solid #fff;
+  height: 100%;
+  box-shadow: rgba(34, 25, 25, 0.4) 0px 1px 3px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 1s ease-in-out;
+}
+.about figure img.profile:hover {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -ms-filter: grayscale(0%);
   -o-filter: grayscale(0%);
   filter: grayscale(0%);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
+}
+
+a > img {
+  text-decoration: none;
+}
+
+.post img.wp-post-image {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.fa,
+.svg {
+  color: rgba(255, 255, 255, 0.75);
+  path: rgba(255, 255, 255, 0.75);
+  transition: all 0.4s ease-in-out;
+}
+.fa:hover,
+.svg:hover {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /*------------------------------------*\
@@ -250,6 +539,8 @@ html {
 
 body {
   font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #ffbc49;
+  border: 5px solid #fff;
   color: #705f57;
 }
 
@@ -270,84 +561,212 @@ body {
 
 img {
   max-width: 100%;
+  display: inline-block;
   vertical-align: bottom;
-}
-
-a {
-  color: #444;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #444;
-}
-
-a:focus {
-  outline: 0;
-}
-
-a:hover,
-a:active {
-  outline: 0;
-}
-
-input:focus {
-  outline: 0;
-  border: 1px solid #04A4CC;
 }
 
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
 /* wrapper */
-.wrapper {
-  max-width: 1400px;
-  width: 98%;
-  margin: 0 auto;
+#full {
+  width: 100%;
+  max-width: 100%;
   position: relative;
+  background: #ffbc49;
 }
 
-/* header */
-.header h1, .header .logo, .header .nav, .header nav li {
-  display: inline-block;
+.f-wrapper {
+  padding-top: 200px;
+  max-width: 1090px;
+  width: 98%;
+  margin: 10px auto;
+  background: #ffbc49;
 }
 
-/* logo */
 /* nav */
 .nav {
   float: right;
-  position: relative;
-  bottom: 0;
+  width: 65%;
+  padding-top: 12%;
 }
 .nav ul {
-  padding-right: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
 }
 .nav li {
   list-style: none;
+  font-size: 2.5rem;
+  padding: 20px;
+  margin: 0 auto;
+}
+.nav a {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+
+/* header wrapper */
+.headerWrapper {
+  background: #ffbc49;
+  transition: background 0.4s ease-in;
+}
+
+/* header */
+.header {
+  max-width: 1090px;
+  margin: 0 auto;
+  background: #ffbc49;
+  transition: background 0.4s ease-in;
+}
+.header h1, .header .logo, .header .nav, .header nav ul, .header nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+.f-header {
+  background: #fff;
+}
+
+/* sticky nav */
+.f-headerWrapper {
+  z-index: 9999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 75px;
+  background: #fff;
+  width: 100%;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+}
+.f-headerWrapper .nav {
+  padding-top: 0;
+}
+.f-headerWrapper a {
+  color: #705f57;
+  text-shadow: none;
+}
+
+/* logo */
+.logo {
+  width: 35%;
+  position: fixed;
+  top: 0;
+  left: -webkit-calc(50% - 545px);
+  left: calc(50% - 545px);
+}
+.logo a {
+  overflow: hidden;
+}
+.logo h1 {
+  width: 100%;
+}
+
+.logo-img {
+  float: left;
+  max-width: 200px;
+  margin-top: 2%;
+}
+
+.name {
+  display: none;
+  float: left;
+  margin: 20px 0 0 20px;
+  width: 200px;
 }
 
 main, .footer {
   background: #ffbc49;
 }
 
+.innerWrapper,
+.featured > section,
+.portfolio > section {
+  padding: 0;
+}
+
 section {
-  background: lightcyan;
   max-width: 1090px;
   display: block;
   margin: 0 auto;
-  position: relative;
-}
-section figure, section figcaption {
-  display: inline-block;
-}
-section figcaption {
-  display: none;
+  padding: 75px 0 50px 0;
 }
 
 /* sidebar */
+.sidebar {
+  float: right;
+  width: 32.11009%;
+  padding: 15px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0 20px;
+}
+.sidebar ul .fa-twitter {
+  float: left;
+}
+.sidebar ul li {
+  padding-bottom: 10px;
+  margin-left: 22px;
+}
+.sidebar .APTFPIN_by_TAP .AlpinePhotoTiles-link:first-child {
+  padding: 0 10px;
+}
+.sidebar .APTFIN_by_TAP a:first-child {
+  padding-bottom: 20px;
+}
+
 /* footer */
 .footer {
   display: block;
+  padding: 20px 0;
+}
+.footer .footerWrapper {
+  max-width: 1090px;
+  width: 100%;
+  margin: 0 auto;
+}
+.footer .footerWrapper .svg {
+  float: right;
+  margin-top: 10%;
+}
+.footer .footerWrapper .svg:hover path {
+  fill: rgba(255, 255, 255, 0.9);
+  fill: red;
+}
+.footer .footerWrapper .connect {
+  width: 75%;
+  margin: 0 auto;
+}
+.footer .footerWrapper .connect h3 {
+  width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+.footer .footerWrapper .connect ul {
+  text-align: center;
+}
+.footer .footerWrapper .social_media {
+  display: block;
+  width: auto;
+  padding-left: 0;
+  padding: 5% 0;
+  margin: 0;
+}
+.footer .footerWrapper .social_media li {
+  display: inline-block;
+  padding: 1% 2%;
+}
+.footer .footerWrapper .social_media .fa {
+  width: 64px;
+  height: 64px;
+}
+.footer .copyright {
+  display: block;
+  text-align: center;
 }
 
 /*------------------------------------*\
@@ -358,10 +777,91 @@ section figcaption {
 .portfolio section {
   height: 230px;
   overflow: hidden;
+  position: relative;
+}
+.featured section figure, .featured section figcaption,
+.portfolio section figure,
+.portfolio section figcaption {
+  display: inline-block;
+}
+.featured section figcaption,
+.portfolio section figcaption {
+  opacity: 100;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+.featured section figcaption .overlay,
+.portfolio section figcaption .overlay {
+  margin: auto auto;
+}
+.featured section figcaption .overlay h3, .featured section figcaption .overlay h4, .featured section figcaption .overlay form,
+.portfolio section figcaption .overlay h3,
+.portfolio section figcaption .overlay h4,
+.portfolio section figcaption .overlay form {
+  color: #ffbc49;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(112, 95, 87, 0.7);
+}
+.featured section figcaption .overlay h4, .featured section figcaption .overlay form,
+.portfolio section figcaption .overlay h4,
+.portfolio section figcaption .overlay form {
+  color: #ff8d49;
+  padding-top: 10px;
+}
+.featured section:hover figcaption,
+.portfolio section:hover figcaption {
+  opacity: 0;
+}
+.featured section:hover img.attachment-post-thumbnail.wp-post-image,
+.portfolio section:hover img.attachment-post-thumbnail.wp-post-image {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
 }
 
+.featured section:nth-child(4) {
+  margin-right: 0;
+}
+
+.services {
+  padding-top: 0;
+}
 .services h2 {
   display: block;
+}
+.services section {
+  padding: 20px;
+  height: 470px;
+}
+.services section:nth-child(2) {
+  background: #ede7df url("img/icons/html.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.services section:nth-child(3) {
+  background: #ede7df url("img/icons/design.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.services section:nth-child(4) {
+  background: #ede7df url("img/icons/responsive2.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.services section:last-child {
+  margin-right: 0;
 }
 
 /* portfolio */
@@ -370,7 +870,56 @@ section figcaption {
   display: none;
 }
 
+.portfolio section:nth-child(3n + 4) {
+  margin-right: 0;
+}
+.portfolio .shareaholic-canvas {
+  display: none;
+}
+
+/* single-portfolio page */
+.details {
+  float: left;
+}
+
+.portfolio-images,
+.aboutme {
+  float: left;
+  padding-left: 20px;
+}
+
 /* about */
+div.circle {
+  margin: 0 auto;
+  display: block;
+}
+
+div.bar {
+  display: block;
+}
+
+/* blog */
+div.blog,
+div.post {
+  float: left;
+}
+div.blog h2,
+div.post h2 {
+  max-width: 500px;
+  margin: 0 auto;
+}
+div.blog article,
+div.post article {
+  margin-bottom: 75px;
+}
+div.blog img,
+div.post img {
+  display: block;
+  margin: 0 auto;
+  border: 10px solid #fff;
+}
+
+/* blog post */
 /* contact */
 /*------------------------------------*\
     RESPONSIVE
@@ -527,7 +1076,7 @@ a img.aligncenter {
     margin: 0.5cm;
 }
 
-  p, li,
+  p,
   h2,
   h3 {
     orphans: 3;

@@ -31,12 +31,14 @@ get_header(); ?>
 
 					<?php while ($portfolioQuery->have_posts()) : $portfolioQuery->the_post(); ?>
 
-						<section id="<?php echo $post->post_name; ?>">
+						<section id="<?php echo $post->post_name; ?>" class ="clear">
 
 							<a href="<?php the_permalink(); ?>">
 								<figcaption>
-									<h3><?php the_title(); ?></h3>
-									<h4><?php the_field('technologies'); ?></h4>
+									<div class="overlay">
+										<h3><?php the_title(); ?></h3>
+										<h4><?php the_field('technologies'); ?></h4>
+									</div>
 								</figcaption>
 								<figure>
 									<?php 
@@ -57,7 +59,7 @@ get_header(); ?>
 
 			</section> <!-- /section -->
 
-			<section class="services">
+			<section class="services clear">
 
 				<h2>Services</h2>
 				 

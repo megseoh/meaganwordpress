@@ -1,0 +1,24 @@
+{
+  "name": "html5blank-master",
+  "version": "0.0.0",
+  "description": "sass compiling for this project & some other things",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/megseoh/meaganwordpress.git"
+  },
+  "author": "Meagan O'Hara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megseoh/meaganwordpress/issues"
+  },
+  "homepage": "https://github.com/megseoh/meaganwordpress",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

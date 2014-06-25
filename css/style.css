@@ -486,11 +486,14 @@ a > img {
   margin: 0 auto;
 }
 
-.fa {
+.fa,
+.svg {
   color: rgba(255, 255, 255, 0.75);
+  path: rgba(255, 255, 255, 0.75);
   transition: all 0.4s ease-in-out;
 }
-.fa:hover {
+.fa:hover,
+.svg:hover {
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -710,7 +713,8 @@ section {
   margin-top: 10%;
 }
 .footer .footerWrapper .svg:hover path {
-  fill: #009b8f;
+  fill: rgba(255, 255, 255, 0.9);
+  fill: red;
 }
 .footer .footerWrapper .connect {
   width: 75%;

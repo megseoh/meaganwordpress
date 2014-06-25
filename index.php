@@ -2,18 +2,23 @@
 
 	<main role="main">
 		<!-- section -->
-		<section>
+		<section class="blog clear">
 
-			<h2><?php _e( 'Latest Posts', 'html5blank' ); ?></h2>
+			<div class="blog">
 
-			<?php get_template_part('loop'); ?>
+				<h2><?php _e( 'Latest Posts', 'html5blank' ); ?></h2>
 
-			<?php get_template_part('pagination'); ?>
+				<?php get_template_part('loop'); ?>
 
+				<?php get_template_part('pagination'); ?>
+
+			</div>
+
+			<?php get_sidebar(); ?>
+	
 		</section>
 		<!-- /section -->
-	</main>
 
-<?php get_sidebar(); ?>
+	</main>
 
 <?php get_footer(); ?>

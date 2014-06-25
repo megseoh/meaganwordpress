@@ -30,7 +30,7 @@ if (function_exists('add_theme_support'))
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
-    add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('custom-size', 350, 230, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -384,6 +384,12 @@ add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
+// Remove <p> tags from images
+function filter_ptags_on_images($content){
+   return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+add_filter('the_content', 'filter_ptags_on_images');
+
 // Shortcodes
 add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
 add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [html5_shortcode_demo_2] in Pages, Posts now.
@@ -448,5 +454,53 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
     return '<h2>' . $content . '</h2>';
 }
+
+/*------------------------------------*\
+    Adding 'Current' Class to Portfolio-Archive
+\*------------------------------------*/
+
+function add_parent_url_menu_class( $classes = array(), $item = false ) {
+  // Get current URL
+  $current_url = current_url();
+
+  // Get homepage URL
+  $homepage_url = trailingslashit( get_bloginfo( 'url' ) );
+
+  // Exclude 404 and homepage
+  if( is_404() or $item->url == $homepage_url )
+    return $classes;
+
+  if ( get_post_type() == "portfolio" )
+  {
+    unset($classes[array_search('current_page_parent',$classes)]);
+    if ( isset($item->url) )
+      if ( strstr( $current_url, $item->url) )
+        $classes[] = 'current-menu-item';
+  }
+
+  return $classes;
+}
+
+function current_url() {
+  // Protocol
+  // $url = ( 'on' == $_SERVER['HTTPS'] ) ? 'https://' : 'http://';
+    $url = 'http://';
+  $url .= $_SERVER['SERVER_NAME'];
+
+  // Port
+  $url .= ( '80' == $_SERVER['SERVER_PORT'] ) ? '' : ':' . $_SERVER['SERVER_PORT'];
+  $url .= $_SERVER['REQUEST_URI'];
+
+  return trailingslashit( $url );
+}
+add_filter( 'nav_menu_css_class', 'add_parent_url_menu_class', 10, 3 );
+
+// allow SVG uploads
+add_filter('upload_mimes', 'custom_upload_mimes');
+function custom_upload_mimes ( $existing_mimes=array() ) {
+    $existing_mimes['svg'] = 'mime/type';
+    return $existing_mimes;
+}
+
 
 ?>
