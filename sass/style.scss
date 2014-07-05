@@ -180,7 +180,7 @@ section {
 	max-width: 1090px;
 	display: block;
 	margin: 0 auto;
-	padding: 75px 0 50px 0;
+	padding: 120px 0 50px 0;
 }
 /* sidebar */
 .sidebar {
@@ -320,27 +320,30 @@ section {
 	}
 	section {
 		@extend %third;
-		@extend %thirdstyles;
-		padding: 20px;
-		height: 470px;
 		&:nth-child(2) {
-			background: $neutralLight url('img/icons/html.svg') no-repeat;
-			background-size: contain;
-			background-position: center;
+			background: url('img/icons/html.svg') no-repeat;
+			background-size: 100px;
+			background-position: top;
 		}
 		&:nth-child(3) {
-			background: $neutralLight url('img/icons/design.svg') no-repeat;
-			background-size: contain;
-			background-position: center;
+			background: url('img/icons/design.svg') no-repeat;
+			background-size: 100px;
+			background-position: top;
 		}
 		&:nth-child(4) {
-			background: $neutralLight url('img/icons/responsive2.svg') no-repeat;
-			background-size: contain;
-			background-position: center;
+			background: url('img/icons/responsive2.svg') no-repeat;
+			background-size: 100px;
+			background-position: top;
 		}
 		&:last-child {
 			margin-right: 0;
 		}
+	}
+	p {
+		background: $neutralLight;
+		@extend %thirdstyles;
+		padding: 20px;
+		height: 470px;
 	}
 }
 
