@@ -219,10 +219,6 @@ section {
 		.svg {
 			float: right;
 			margin-top: 10%;
-			&:hover path {
-				fill: rgba(255,255,255,0.9);
-				fill: red;
-			}
 		}
 		.connect {
 			width: 75%;

@@ -3,7 +3,7 @@
 
 				<div class="footerWrapper clear">
 
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.svg" class="svg">
+					<a href="#top"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.svg" class="svg"></a>
 
 					<a href="#top"><?php //get_template_part( 'img/icons/inline', 'arrow.svg' ); ?></a>
 					

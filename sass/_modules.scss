@@ -58,12 +58,25 @@ a > img {
 	margin: 0 auto;
 }
 
-.fa,
-.svg {
+.fa {
 	color: rgba(255,255,255,0.75);
-	path: rgba(255,255,255,0.75);
-	transition: all 0.4s ease-in-out;
+	transition: color 0.4s ease-in-out;
 	&:hover {
 		color: rgba(255,255,255,0.9);
+	}
+}
+
+.footer {
+	.svg {
+		path {
+			fill: rgba(255,255,255,0.75);
+			// this transition isn't working for some reason
+			transition: fill 0.4s ease-in-out;
+		}
+		&:hover {
+			path {
+				fill: rgba(255,255,255,0.9);
+			}		
+		}
 	}
 }

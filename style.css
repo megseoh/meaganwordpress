@@ -507,15 +507,20 @@ a > img {
   margin: 0 auto;
 }
 
-.fa,
-.svg {
+.fa {
   color: rgba(255, 255, 255, 0.75);
-  path: rgba(255, 255, 255, 0.75);
-  transition: all 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
-.fa:hover,
-.svg:hover {
+.fa:hover {
   color: rgba(255, 255, 255, 0.9);
+}
+
+.footer .svg path {
+  fill: rgba(255, 255, 255, 0.75);
+  transition: fill 0.4s ease-in-out;
+}
+.footer .svg:hover path {
+  fill: rgba(255, 255, 255, 0.9);
 }
 
 /*------------------------------------*\
@@ -732,10 +737,6 @@ section {
 .footer .footerWrapper .svg {
   float: right;
   margin-top: 10%;
-}
-.footer .footerWrapper .svg:hover path {
-  fill: rgba(255, 255, 255, 0.9);
-  fill: red;
 }
 .footer .footerWrapper .connect {
   width: 75%;
