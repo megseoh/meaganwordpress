@@ -17,6 +17,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughblack_one';
   src: url("fonts/thirstyroughblackone-webfont.eot");
@@ -24,6 +25,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughblack_shadow';
   src: url("fonts/thirstyroughblackshadow-webfont.eot");
@@ -31,6 +33,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughblack_three';
   src: url("fonts/thirstyroughblackthree-webfont.eot");
@@ -38,6 +41,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughblack_two';
   src: url("fonts/thirstyroughblacktwo-webfont.eot");
@@ -45,6 +49,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughbold';
   src: url("fonts/thirstyroughbold-webfont.eot");
@@ -52,6 +57,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughbold_one';
   src: url("fonts/thirstyroughboldone-webfont.eot");
@@ -59,6 +65,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughbold_shadow';
   src: url("fonts/thirstyroughboldshadow-webfont.eot");
@@ -66,6 +73,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughbold_three';
   src: url("fonts/thirstyroughboldthree-webfont.eot");
@@ -73,6 +81,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughbold_two';
   src: url("fonts/thirstyroughboldtwo-webfont.eot");
@@ -80,6 +89,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughlight';
   src: url("fonts/thirstyroughlight-webfont.eot");
@@ -87,6 +97,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughlight_one';
   src: url("fonts/thirstyroughlightone-webfont.eot");
@@ -94,6 +105,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughlight_shadow';
   src: url("fonts/thirstyroughlightshadow-webfont.eot");
@@ -101,6 +113,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughlight_three';
   src: url("fonts/thirstyroughlightthree-webfont.eot");
@@ -108,6 +121,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughlight_two';
   src: url("fonts/thirstyroughlighttwo-webfont.eot");
@@ -115,6 +129,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughregular_three';
   src: url("fonts/thirstyroughregularthree-webfont.eot");
@@ -122,6 +137,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughregular_two';
   src: url("fonts/thirstyroughregulartwo-webfont.eot");
@@ -129,6 +145,7 @@
   font-weight: l;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_rough_texturesregular';
   src: url("fonts/thirstyroughtextures-webfont.eot");
@@ -136,6 +153,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsfonts/ty_rough_regregular';
   src: url("fonts/thirstyroughregular-webfont.eot");
@@ -143,6 +161,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughregular_one';
   src: url("fonts/thirstyroughregularone-webfont.eot");
@@ -150,6 +169,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'thirsty_roughregular_shadow';
   src: url("fonts/thirstyroughregularshadow-webfont.eot");
@@ -157,6 +177,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
@@ -171,7 +192,7 @@
 
 p,
 blockquote {
-  font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #705f57;
   font-size: 2rem;
   margin: 0;
@@ -265,8 +286,8 @@ section > h2:first-child,
 /* front-page */
 .services h3 {
   font-size: 2rem;
-  text-shadow: 0px 0px 2px rgba(112, 95, 87, 0.7);
-  padding-bottom: 5%;
+  text-shadow: 0px 1px 3px rgba(255, 141, 73, 0.7);
+  padding-bottom: 10%;
 }
 
 /* front-page */
@@ -432,7 +453,7 @@ div.post {
 }
 
 .featured section,
-.portfolio section, .services section {
+.portfolio section, .services p {
   border: 10px solid #fff;
   margin-bottom: 20px;
   margin-right: 1.83486%;
@@ -486,15 +507,20 @@ a > img {
   margin: 0 auto;
 }
 
-.fa,
-.svg {
+.fa {
   color: rgba(255, 255, 255, 0.75);
-  path: rgba(255, 255, 255, 0.75);
-  transition: all 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
-.fa:hover,
-.svg:hover {
+.fa:hover {
   color: rgba(255, 255, 255, 0.9);
+}
+
+.footer .svg path {
+  fill: rgba(255, 255, 255, 0.75);
+  transition: fill 0.4s ease-in-out;
+}
+.footer .svg:hover path {
+  fill: rgba(255, 255, 255, 0.9);
 }
 
 /*------------------------------------*\
@@ -671,7 +697,7 @@ section {
   max-width: 1090px;
   display: block;
   margin: 0 auto;
-  padding: 75px 0 50px 0;
+  padding: 120px 0 50px 0;
 }
 
 /* sidebar */
@@ -711,10 +737,6 @@ section {
 .footer .footerWrapper .svg {
   float: right;
   margin-top: 10%;
-}
-.footer .footerWrapper .svg:hover path {
-  fill: rgba(255, 255, 255, 0.9);
-  fill: red;
 }
 .footer .footerWrapper .connect {
   width: 75%;
@@ -820,27 +842,28 @@ section {
 .services h2 {
   display: block;
 }
-.services section {
-  padding: 20px;
-  height: 470px;
-}
 .services section:nth-child(2) {
-  background: #ede7df url("img/icons/html.svg") no-repeat;
-  background-size: contain;
-  background-position: center;
+  background: url("img/icons/html.svg") no-repeat;
+  background-size: 100px;
+  background-position: top;
 }
 .services section:nth-child(3) {
-  background: #ede7df url("img/icons/design.svg") no-repeat;
-  background-size: contain;
-  background-position: center;
+  background: url("img/icons/design.svg") no-repeat;
+  background-size: 100px;
+  background-position: top;
 }
 .services section:nth-child(4) {
-  background: #ede7df url("img/icons/responsive2.svg") no-repeat;
-  background-size: contain;
-  background-position: center;
+  background: url("img/icons/responsive2.svg") no-repeat;
+  background-size: 100px;
+  background-position: top;
 }
 .services section:last-child {
   margin-right: 0;
+}
+.services p {
+  background: #ede7df;
+  padding: 20px;
+  height: 400px;
 }
 
 /* portfolio */
@@ -1053,7 +1076,8 @@ a img.aligncenter {
 
   @page {
     margin: 0.5cm;
-  }
+}
+
   p,
   h2,
   h3 {
