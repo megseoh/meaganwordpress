@@ -39,14 +39,23 @@ img.attachment-post-thumbnail.wp-post-image {
 			border: 10px solid #fff;
 			height: 100%;
 			box-shadow: rgba(34, 25, 25, 0.4) 0px 1px 3px;
-			@include filter(grayscale(100%));
-			transition: all 1s ease-in-out;
-			&:hover {
-				@include filter(grayscale(0%));
-			}
+			-webkit-animation: fadeIn 5s;
+			animation: fadeIn 5s;
 		}
 	}
 }
+@-webkit-keyframes fadeIn {
+	from { @include filter(grayscale(100%)); }
+	to { @include filter(grayscale(0%)); }
+}
+@keyframes fadeIn {
+	from { @include filter(grayscale(100%)); }
+	to { @include filter(grayscale(0%)); }
+}
+
+
+
+
 
 a > img {
 	text-decoration: none;
@@ -61,7 +70,8 @@ a > img {
 .fa {
 	color: rgba(255,255,255,0.75);
 	transition: color 0.4s ease-in-out;
-	&:hover {
+	&:hover,
+	&:focus {
 		color: rgba(255,255,255,0.9);
 	}
 }
@@ -73,7 +83,8 @@ a > img {
 			// this transition isn't working for some reason
 			transition: fill 0.4s ease-in-out;
 		}
-		&:hover {
+		&:hover,
+		&:focus {
 			path {
 				fill: rgba(255,255,255,0.9);
 			}		

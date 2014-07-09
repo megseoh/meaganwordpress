@@ -292,10 +292,12 @@ section {
 				}
 			}
 		}
-		&:hover figcaption {
+		&:hover figcaption,
+		&:focus figcaption {
 			opacity: 0;
 		}
-		&:hover img.attachment-post-thumbnail.wp-post-image {
+		&:hover img.attachment-post-thumbnail.wp-post-image,
+		&:focus img.attachment-post-thumbnail.wp-post-image {
 			@include filter(grayscale(0%));
 			@include transform(scale(1.01));
 		}

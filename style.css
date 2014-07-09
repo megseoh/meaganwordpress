@@ -482,19 +482,44 @@ img.attachment-post-thumbnail.wp-post-image {
   border: 10px solid #fff;
   height: 100%;
   box-shadow: rgba(34, 25, 25, 0.4) 0px 1px 3px;
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  transition: all 1s ease-in-out;
+  -webkit-animation: fadeIn 5s;
+  animation: fadeIn 5s;
 }
-.about figure img.profile:hover {
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: grayscale(0%);
+
+@-webkit-keyframes fadeIn {
+  from {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  to {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+
+  to {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
 }
 
 a > img {
@@ -511,7 +536,7 @@ a > img {
   color: rgba(255, 255, 255, 0.75);
   transition: color 0.4s ease-in-out;
 }
-.fa:hover {
+.fa:hover, .fa:focus {
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -519,7 +544,7 @@ a > img {
   fill: rgba(255, 255, 255, 0.75);
   transition: fill 0.4s ease-in-out;
 }
-.footer .svg:hover path {
+.footer .svg:hover path, .footer .svg:focus path {
   fill: rgba(255, 255, 255, 0.9);
 }
 
@@ -814,12 +839,14 @@ section {
   color: #ff8d49;
   padding-top: 10px;
 }
-.featured section:hover figcaption,
-.portfolio section:hover figcaption {
+.featured section:hover figcaption, .featured section:focus figcaption,
+.portfolio section:hover figcaption,
+.portfolio section:focus figcaption {
   opacity: 0;
 }
-.featured section:hover img.attachment-post-thumbnail.wp-post-image,
-.portfolio section:hover img.attachment-post-thumbnail.wp-post-image {
+.featured section:hover img.attachment-post-thumbnail.wp-post-image, .featured section:focus img.attachment-post-thumbnail.wp-post-image,
+.portfolio section:hover img.attachment-post-thumbnail.wp-post-image,
+.portfolio section:focus img.attachment-post-thumbnail.wp-post-image {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -ms-filter: grayscale(0%);
