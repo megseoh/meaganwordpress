@@ -22,11 +22,11 @@
 
 /* portfolio */
 img.attachment-post-thumbnail.wp-post-image {
+	@include filter(grayscale(100%));
+	@include transform(scale(1));
 	display: inline-block;
 	width: 100%;
 	height: 100%;
-	@include filter(grayscale(100%));
-	@include transform(scale(1));
 	transition: all 1s ease-in-out;
 }
 
@@ -52,8 +52,6 @@ img.attachment-post-thumbnail.wp-post-image {
 	from { @include filter(grayscale(100%)); }
 	to { @include filter(grayscale(0%)); }
 }
-
-
 
 
 
