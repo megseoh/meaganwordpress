@@ -4,7 +4,7 @@
 		
 		'use strict';
 		
-		// js for orange 'o's'
+		// js for turquoise o's in primary navigation
 		var current = $('.current_page_item a, .current_page_parent a, .current-menu-item a');
 
 		var newText = current.text().replace(/o/g, '<span class="selectedNav">o</span>');
@@ -27,6 +27,7 @@
 			});
 		}
 	
+		// js for logo on
 		$(window).scroll(function() {
 			top = $(this).scrollTop();
 			if (top > 140) {
@@ -47,9 +48,6 @@
 				});
 			}
 		});
-
-		// adding little twitter icon before list items
-		$('.really_simple_twitter_widget li').before('<span class="fa fa-twitter">');
 
 
 		/*  Replace all SVG images with inline SVG */
@@ -76,6 +74,10 @@
 				$img.replaceWith($svg);
 			});
 		});
+
+
+		// adding little twitter icon before list items
+		$('.really_simple_twitter_widget li').before('<span class="fa fa-twitter">');
 
 
 	});
