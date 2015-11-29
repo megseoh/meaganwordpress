@@ -955,8 +955,17 @@ div.post article {
 div.blog img,
 div.post img {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
   border: 10px solid #fff;
+}
+div.blog p,
+div.post p {
+  margin-bottom: 0.5em;
+}
+div.blog li,
+div.post li {
+  font-size: 1.8em;
+  line-height: 1.5em;
 }
 
 /* blog post */

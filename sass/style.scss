@@ -437,8 +437,15 @@ div.post {
 	}
 	img {
 		display: block;
-		margin: 0 auto;
+		margin: 20px auto;
 		border: 10px solid #fff;
+	}
+	p {
+		margin-bottom: 0.5em;
+	}
+	li {
+		font-size: 1.8em;
+		line-height: 1.5em;
 	}
 }
 

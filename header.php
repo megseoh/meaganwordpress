@@ -5,12 +5,12 @@
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 		<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Lato:300,400,700' rel='stylesheet' type='text/css'>
-		
+
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
 
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
-        
+
         <link href="<?php echo get_template_directory_uri(); ?>/css/font-awesome.min.css" rel="stylesheet" >
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -37,7 +37,7 @@
 					<div class="logo">
 						<h1><a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo/meagan05.svg" alt="The letter M inside a circle" class="logo-img"><p class="name">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo/meagan06.png" alt="The letter M inside an O" class="logo-img"><p class="name">
 						meagan o'hara</p></a></h1>
 					</div>
 					<!-- /logo -->
