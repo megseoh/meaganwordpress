@@ -17,7 +17,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughblack_one';
   src: url("fonts/thirstyroughblackone-webfont.eot");
@@ -25,7 +24,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughblack_shadow';
   src: url("fonts/thirstyroughblackshadow-webfont.eot");
@@ -33,7 +31,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughblack_three';
   src: url("fonts/thirstyroughblackthree-webfont.eot");
@@ -41,7 +38,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughblack_two';
   src: url("fonts/thirstyroughblacktwo-webfont.eot");
@@ -49,7 +45,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughbold';
   src: url("fonts/thirstyroughbold-webfont.eot");
@@ -57,7 +52,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughbold_one';
   src: url("fonts/thirstyroughboldone-webfont.eot");
@@ -65,7 +59,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughbold_shadow';
   src: url("fonts/thirstyroughboldshadow-webfont.eot");
@@ -73,7 +66,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughbold_three';
   src: url("fonts/thirstyroughboldthree-webfont.eot");
@@ -81,7 +73,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughbold_two';
   src: url("fonts/thirstyroughboldtwo-webfont.eot");
@@ -89,7 +80,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughlight';
   src: url("fonts/thirstyroughlight-webfont.eot");
@@ -97,7 +87,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughlight_one';
   src: url("fonts/thirstyroughlightone-webfont.eot");
@@ -105,7 +94,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughlight_shadow';
   src: url("fonts/thirstyroughlightshadow-webfont.eot");
@@ -113,7 +101,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughlight_three';
   src: url("fonts/thirstyroughlightthree-webfont.eot");
@@ -121,7 +108,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughlight_two';
   src: url("fonts/thirstyroughlighttwo-webfont.eot");
@@ -129,7 +115,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughregular_three';
   src: url("fonts/thirstyroughregularthree-webfont.eot");
@@ -137,7 +122,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughregular_two';
   src: url("fonts/thirstyroughregulartwo-webfont.eot");
@@ -145,7 +129,6 @@
   font-weight: l;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_rough_texturesregular';
   src: url("fonts/thirstyroughtextures-webfont.eot");
@@ -153,7 +136,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsfonts/ty_rough_regregular';
   src: url("fonts/thirstyroughregular-webfont.eot");
@@ -161,7 +143,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughregular_one';
   src: url("fonts/thirstyroughregularone-webfont.eot");
@@ -169,7 +150,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'thirsty_roughregular_shadow';
   src: url("fonts/thirstyroughregularshadow-webfont.eot");
@@ -177,7 +157,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
@@ -453,7 +432,7 @@ div.post {
 }
 
 .featured section,
-.portfolio section, .services p {
+.portfolio section, .services section, .services p {
   border: 10px solid #fff;
   margin-bottom: 20px;
   margin-right: 1.83486%;
@@ -494,7 +473,6 @@ img.attachment-post-thumbnail.wp-post-image {
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
   }
-
   to {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
@@ -503,7 +481,6 @@ img.attachment-post-thumbnail.wp-post-image {
     filter: grayscale(0%);
   }
 }
-
 @keyframes fadeIn {
   from {
     -webkit-filter: grayscale(100%);
@@ -512,7 +489,6 @@ img.attachment-post-thumbnail.wp-post-image {
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
   }
-
   to {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
@@ -521,7 +497,6 @@ img.attachment-post-thumbnail.wp-post-image {
     filter: grayscale(0%);
   }
 }
-
 a > img {
   text-decoration: none;
 }
@@ -538,6 +513,17 @@ a > img {
 }
 .fa:hover, .fa:focus {
   color: rgba(255, 255, 255, 0.9);
+}
+
+.portfolio-images {
+  position: relative;
+}
+.portfolio-images .tablet-image {
+  position: absolute;
+  top: 0;
+}
+.portfolio-images .metaslider {
+  margin-bottom: 75px;
 }
 
 .footer .svg path {
@@ -870,6 +856,10 @@ section {
 .services h2 {
   display: block;
 }
+.services section {
+  border: none;
+  margin-bottom: 0;
+}
 .services section:nth-child(2) {
   background: url("img/icons/html.svg") no-repeat;
   background-size: 100px;
@@ -884,14 +874,12 @@ section {
   background: url("img/icons/responsive2.svg") no-repeat;
   background-size: 100px;
   background-position: top;
-}
-.services section:last-child {
   margin-right: 0;
 }
 .services p {
   background: #ede7df;
   padding: 20px;
-  height: 400px;
+  min-height: 400px;
 }
 
 /* portfolio */
@@ -1104,8 +1092,7 @@ a img.aligncenter {
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   p,
   h2,
   h3 {
@@ -1118,3 +1105,5 @@ a img.aligncenter {
     page-break-after: avoid;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

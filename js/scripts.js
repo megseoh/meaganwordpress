@@ -1,15 +1,15 @@
 (function ($, root, undefined) {
-	
+
 	$(function () {
-		
+
 		'use strict';
-		
+
 		// js for turquoise o's in primary navigation
 		var current = $('.current_page_item a, .current_page_parent a, .current-menu-item a');
 
 		var newText = current.text().replace(/o/g, '<span class="selectedNav">o</span>');
 		current.html(newText);
-		
+
 
 		// js for sticky nav
 		var body = $('body');
@@ -19,27 +19,38 @@
 		var logo = $('.logo-img');
 		var name = $('.name');
 		var top = $(window).scrollTop();
+		var width = $(window).width();
 
 		if (top > 190) {
 			logo.css({
-				width: 75,
-				height : 75
+				width: 73,
+				height : 73
 			});
+			wrapper.addClass("f-wrapper");
+			headerWrapper.addClass("f-headerWrapper");
+			header.addClass("f-header");
 		}
-	
+
 		// js for logo on
 		$(window).scroll(function() {
 			top = $(this).scrollTop();
+			// if (top > 190 && width > 825) {
+			// 	name.fadeIn();
+			// } else if (top <= 190 && width > 825) {
+			// 	name.fadeOut();
+			// }
+			// } else {
+			// 	name.fadeOut();
+			// }
 			if (top > 140) {
 				wrapper.addClass("f-wrapper");
 				headerWrapper.addClass("f-headerWrapper");
 				header.addClass("f-header");
-				name.fadeIn();
 			} else {
 				wrapper.removeClass("f-wrapper");
 				headerWrapper.removeClass("f-headerWrapper");
 				header.removeClass("f-header");
-				name.fadeOut();
+				// name.fadeOut();
 			}
 			if (top < 190) {
 				logo.css({
@@ -81,5 +92,5 @@
 
 
 	});
-	
+
 })(jQuery, this);

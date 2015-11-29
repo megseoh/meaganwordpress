@@ -47,6 +47,11 @@ h3 {
 h4 {
 	@extend %heading-base;
 	color: $neutralDark;
+	font-size: 2rem;
+}
+h4 > a {
+	@extend %heading-base;
+	color: $neutralDark;
 	font-size: 1.6rem;
 }
 h5 {
@@ -92,6 +97,10 @@ a {
 		outline:0;
 	}
 }
+pre {
+	font-size: 1.4em;
+	margin-left: 20px;
+}
 
 /* header */
 .name {
@@ -110,7 +119,7 @@ a {
 }
 
 /* general */
-section > h2, 
+section > h2,
 .blog > h2 {
 	&:first-child {
 		padding: 0 0 55px 0;
@@ -159,17 +168,29 @@ section > h2,
 }
 
 
-/* blog */
-.blog {
+/* blog & single post*/
+.blog,
+.post {
 	h2 {
 		padding: 50px 0;
+	}
+	h3 {
+		padding: 25px 0;
+		font-weight: normal;
 	}
 	.view-article {
 		@extend %heading-base;
 		font-size: 2rem;
-		padding-left: 20px;
+		margin-left: 20px;
 	}
-
+}
+.post h4 > a,
+.post p > a {
+	border-bottom: 1px dotted $compMed;
+	&:hover {
+		border-bottom: 1px dotted $compLight;
+		transition: all .2s ease-in-out;
+	}
 }
 
 /* sidebar */

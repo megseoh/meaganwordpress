@@ -6,7 +6,7 @@
 					<a href="#top"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/arrow.svg" class="svg"></a>
 
 					<a href="#top"><?php //get_template_part( 'img/icons/inline', 'arrow.svg' ); ?></a>
-					
+
 					<?php //get_template_part('searchform'); ?>
 
 					<div class="connect clear">
@@ -17,19 +17,19 @@
 
 						<ul class="social_media clearfix">
 
-							<li><a href="mailto:ohara.meagan@gmail.com"><i class="fa fa-5x fa-envelope"></i></a></li>
+							<li><a href="mailto:ohara.meagan@gmail.com"><i class="fa fa-4x fa-envelope"></i></a></li>
 
-							<li><a href="http://twitter.com/megseoh" target="_blank"><i class="fa fa-5x fa-twitter"></i></a></li>
+							<li><a href="http://twitter.com/megseoh" target="_blank"><i class="fa fa-4x fa-twitter"></i></a></li>
 
-							<li><a href="http://ca.linkedin.com/in/meaganeohara/" target="_blank"><i class="fa fa-5x fa-linkedin"></i></a></li>
+							<li><a href="http://ca.linkedin.com/in/meaganeohara/" target="_blank"><i class="fa fa-4x fa-linkedin"></i></a></li>
 
-							<li><a href="http://github.com/megseoh" target="_blank"><i class="fa fa-5x fa-github-alt"></i></a></li>
+							<li><a href="http://github.com/megseoh" target="_blank"><i class="fa fa-4x fa-github-alt"></i></a></li>
 
-							<li><a href="http://instagram.com/megseoh" target="_blank"><i class="fa fa-5x fa-instagram"></i></a></li>
+							<li><a href="http://instagram.com/megseoh" target="_blank"><i class="fa fa-4x fa-instagram"></i></a></li>
 
-							<li><a href="http://pinterest.com/megseoh" target="_blank"><i class="fa fa-5x fa-pinterest"></i></a></li>
+							<li><a href="http://pinterest.com/megseoh" target="_blank"><i class="fa fa-4x fa-pinterest"></i></a></li>
 
-							<li><a href="http://codepen.io/megseoh" target="_blank"><i class="fa fa-5x fa-codepen"></i></a></li>
+							<li><a href="http://codepen.io/megseoh" target="_blank"><i class="fa fa-4x fa-codepen"></i></a></li>
 
 						</ul>
 
