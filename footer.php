@@ -29,7 +29,7 @@
 
 							<li><a href="http://pinterest.com/megseoh" target="_blank"><i class="fa fa-4x fa-pinterest"></i></a></li>
 
-							<li><a href="http://codepen.io/megseoh" target="_blank"><i class="fa fa-4x fa-codepen"></i></a></li>
+							<!-- <li><a href="http://codepen.io/megseoh" target="_blank"><i class="fa fa-4x fa-codepen"></i></a></li> -->
 
 						</ul>
 
