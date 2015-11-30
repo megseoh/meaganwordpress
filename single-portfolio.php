@@ -2,7 +2,7 @@
 
 <main role="main">
   <!-- section -->
-  <section class="portfolio">
+  <section class="portfolio clear">
 
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
