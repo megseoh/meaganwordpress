@@ -335,6 +335,14 @@ function html5blankcomments($comment, $args, $depth)
 	<?php endif; ?>
 <?php }
 
+
+// add favicon to admin screen too
+function add_my_favicon() {
+   $favicon_path = get_template_directory_uri() . '/img/icons/favicon.ico';
+
+   echo '<link rel="shortcut icon" href="' . $favicon_path . '" />';
+}
+
 /*------------------------------------*\
 	Actions + Filters + ShortCodes
 \*------------------------------------*/
@@ -348,6 +356,7 @@ add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
+add_action( 'admin_head', 'add_my_favicon' ); //admin end
 
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
