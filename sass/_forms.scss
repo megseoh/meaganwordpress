@@ -1,7 +1,8 @@
 form {
-	max-width: 1090px;
+	// max-width: 1090px;
+	max-width: 740px;
 	margin: 0 auto;
-	@extend h4;	
+	@extend h4;
 	.form-title {
 		text-transform: uppercase;
 		color: #fff;
@@ -13,23 +14,30 @@ form {
 		color: $colorMed;
 	}
 	p {
-		width: 49.5%;
+		width: 44.5%;
 		display: inline-block;
-		padding-bottom: 20px;
+		font-weight: 300;
 	}
-	input, textarea {
-		// line-height: 2em;
-		// font-weight: 100;
-		// font-size: 0.8em;
-		// padding-left: 5px;
-		// margin: 10px;
-		// text-transform: lowercase;
-		
-		// -moz-transition: all 0.2s ease-out;
-		// -o-transition: all 0.2s ease-out;
-		// -webkit-transition: all 0.2s ease-out;
-		// -ms-transition: all 0.2s ease-out;
-		// transition: all 0.2s ease-out;
+	p:nth-child(2n+3) {
+		margin-left: 10%;
+	}
+	.wpcf7-form-control/*,
+	.wpcf7-form textarea*/ {
+		line-height: 2em;
+		font-weight: 300;
+		color: $neutralDark;
+		margin: 10px 0 20px;
+		padding: 0 10px 0 0;
+		text-transform: lowercase;
+		&:focus {
+			outline-color: $compMed;
+		}
+
+		-moz-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+		-webkit-transition: all 0.2s ease-out;
+		-ms-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
 
 		// color: lighten($neutralDark, 25%);
 		// background: lighten($neutralLight, 10%);
@@ -40,9 +48,38 @@ form {
 		// 	box-shadow: inset 0 0 3px 1px $compDark;
 		// 	outline: none;
 		// }
+		max-width: 310px;
 	}
-	.textarea {
-		vertical-align: 240%; // 54px
+	.wpcf7-list-item {
+		display: block;
+		line-height: 1.5em;
+	}
+	.wpcf7-checkbox {
+		display: block;
+		margin-top: 0;
+	}
+	.wpcf7-list-item input[type=checkbox] {
+		margin-right: 0.25em;
+	}
+	textarea {
+		// vertical-align: 240%; // 54px
+		max-height: 200px;
+		border: 1px solid #ccc;
+	}
+	.wpcf7-submit {
+		font-family: $font-fancy;
+		background: $compMed;
+		color: #fff;
+		border: none;
+		padding: 0 15px;
+		-moz-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+		-webkit-transition: all 0.2s ease-out;
+		-ms-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+		&:hover {
+			background: darken($compMed, 20%);
+		}
 	}
 	input.button {
 		@extend %button;
@@ -58,21 +95,28 @@ form {
 	.search {
 		margin-left: 20px;
 	}
+	.search-input,
 	.search-submit {
+		font-size: 0.8em;
+		text-transform: lowercase;
 		line-height: 2em;
 		font-weight: 100;
-		font-size: 0.8em;
+		margin-left: 10px;
 		padding: 0 10px;
-		margin: 10px;
-		text-transform: lowercase;
+	}
+	.search-submit {
+		width: 190px;
 		-moz-transition: all 0.2s ease-out;
 		-o-transition: all 0.2s ease-out;
 		-webkit-transition: all 0.2s ease-out;
 		-ms-transition: all 0.2s ease-out;
 		transition: all 0.2s ease-out;
-		color: $compDark;
+		color: #fff;
 		background: $compLight;
 		border: 1px solid $compMed;
+		&:hover {
+			background: darken($compLight, 20%);;
+		}
 	}
 
 	span.wpcf7-not-valid-tip {

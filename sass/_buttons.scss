@@ -42,3 +42,10 @@
 		color: darken($colorMed, 10%);
 	}
 }
+
+#follow-button {
+	background: $compMed !important;
+	&:hover {
+		background: $compLight !important;
+	}
+}

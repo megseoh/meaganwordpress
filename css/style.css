@@ -344,7 +344,7 @@ section > h2:first-child,
 }
 
 form {
-  max-width: 1090px;
+  max-width: 740px;
   margin: 0 auto;
 }
 form .form-title, form input.button, form .button-big, form .button-small, form .button-inverse {
@@ -358,12 +358,59 @@ form label {
   color: #ffa149;
 }
 form p {
-  width: 49.5%;
+  width: 44.5%;
   display: inline-block;
-  padding-bottom: 20px;
+  font-weight: 300;
 }
-form .textarea {
-  vertical-align: 240%;
+form p:nth-child(2n+3) {
+  margin-left: 10%;
+}
+form .wpcf7-form-control {
+  line-height: 2em;
+  font-weight: 300;
+  color: #705f57;
+  margin: 10px 0 20px;
+  padding: 0 10px 0 0;
+  text-transform: lowercase;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  max-width: 310px;
+}
+form .wpcf7-form-control:focus {
+  outline-color: #a1d1cd;
+}
+form .wpcf7-list-item {
+  display: block;
+  line-height: 1.5em;
+}
+form .wpcf7-checkbox {
+  display: block;
+  margin-top: 0;
+}
+form .wpcf7-list-item input[type=checkbox] {
+  margin-right: 0.25em;
+}
+form textarea {
+  max-height: 200px;
+  border: 1px solid #ccc;
+}
+form .wpcf7-submit {
+  font-family: "thirsty_roughregular_two", "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
+  background: #a1d1cd;
+  color: #fff;
+  border: none;
+  padding: 0 15px;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+form .wpcf7-submit:hover {
+  background: #5dafa9;
 }
 form input.button {
   vertical-align: 100%;
@@ -378,21 +425,28 @@ form #search-2 {
 form .search {
   margin-left: 20px;
 }
+form .search-input,
 form .search-submit {
+  font-size: 0.8em;
+  text-transform: lowercase;
   line-height: 2em;
   font-weight: 100;
-  font-size: 0.8em;
+  margin-left: 10px;
   padding: 0 10px;
-  margin: 10px;
-  text-transform: lowercase;
+}
+form .search-submit {
+  width: 190px;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  color: #009b8f;
+  color: #fff;
   background: #ace3e2;
   border: 1px solid #a1d1cd;
+}
+form .search-submit:hover {
+  background: #60c9c7;
 }
 form span.wpcf7-not-valid-tip {
   color: #ff8d49;
@@ -440,6 +494,13 @@ form input.button:hover, .button-big:hover, .button-small:hover, .button-inverse
 .button-inverse:hover {
   background: #ffe2af;
   color: #ff8716;
+}
+
+#follow-button {
+  background: #a1d1cd !important;
+}
+#follow-button:hover {
+  background: #ace3e2 !important;
 }
 
 /*------------------------------------*\
@@ -938,6 +999,10 @@ div.bar {
   display: block;
 }
 
+.vertical-page .chartbox {
+  margin-top: 0 !important;
+}
+
 /* blog */
 div.blog,
 div.post {
@@ -1141,6 +1206,12 @@ a img.aligncenter {
     left: 20px;
   }
 }
+@media only screen and (max-width: 1073px) {
+  .search-input,
+  .search-submit {
+    margin-left: 0;
+  }
+}
 @media only screen and (max-width: 825px) {
   .header .nav li {
     padding: 20px 10px;
@@ -1148,22 +1219,6 @@ a img.aligncenter {
 
   .f-headerWrapper .name {
     display: none;
-  }
-
-  .footer .footerWrapper .svg {
-    bottom: 25px;
-  }
-  .footer .footerWrapper .connect {
-    width: 100%;
-  }
-  .footer .footerWrapper .connect h3 {
-    width: 32.5%;
-  }
-  .footer .footerWrapper .connect .social_media li {
-    padding: 1%;
-  }
-  .footer .footerWrapper .connect .fa-4x {
-    font-size: 3em;
   }
 
   .about figure,
@@ -1175,6 +1230,21 @@ a img.aligncenter {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  .aboutme,
+  .portfolio-images,
+  div.circle,
+  div.bar {
+    float: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  .about figure {
+    max-width: 350px;
+    margin-bottom: 20px;
   }
 
   .featured section,
@@ -1195,10 +1265,47 @@ a img.aligncenter {
   .services p {
     min-height: 300px;
   }
+
+  form {
+    max-width: 400px;
+  }
+  form p {
+    width: 100%;
+  }
+  form p:nth-child(2n+3) {
+    margin-left: 0%;
+  }
+  form .wpcf7-form-control {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .footer .footerWrapper .svg {
+    bottom: 25px;
+  }
+  .footer .footerWrapper .connect {
+    width: 100%;
+  }
+  .footer .footerWrapper .connect h3 {
+    width: 32.5%;
+  }
+  .footer .footerWrapper .connect .social_media li {
+    padding: 1%;
+  }
+  .footer .footerWrapper .connect .fa-4x {
+    font-size: 3em;
+  }
 }
 @media only screen and (max-width: 480px) {
   .header .nav li {
     font-size: 2rem;
+  }
+
+  .aboutme,
+  .portfolio-images,
+  div.circle,
+  div.bar {
+    width: 97.5%;
   }
 
   .footer .footerWrapper {

@@ -24,6 +24,7 @@ module.exports = function(grunt) {
     // Load the Sass tasks, watch tasks
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-browser-sync');
 
     // Default task(s).
     grunt.registerTask('default', ['watch']);
