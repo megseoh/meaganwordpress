@@ -107,6 +107,10 @@ img {
 		text-align: center;
 		color: #fff;
 		width: 100%;
+		&:focus,
+		&:active {
+			border-bottom: 1px dotted #ace3e2;
+		}
 	}
 }
 
@@ -260,6 +264,9 @@ section {
 			li {
 				display: inline-block;
 				padding: 1% 2%;
+			}
+			a {
+				padding-bottom: 5px;
 			}
 			.fa {
 				max-width: 64px;

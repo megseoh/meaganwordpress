@@ -241,11 +241,9 @@ a:hover {
   border-bottom: 1px dotted #ace3e2;
   transition: all .2s ease-in-out;
 }
-a:focus {
+a:focus, a::active {
   outline: 0;
-}
-a::active {
-  outline: 0;
+  border-bottom: 1px dotted #ace3e2;
 }
 
 pre {
@@ -704,6 +702,9 @@ img {
   color: #fff;
   width: 100%;
 }
+.nav a:focus, .nav a:active {
+  border-bottom: 1px dotted #ace3e2;
+}
 
 /* header wrapper */
 .headerWrapper {
@@ -855,6 +856,9 @@ section {
 .footer .footerWrapper .social_media li {
   display: inline-block;
   padding: 1% 2%;
+}
+.footer .footerWrapper .social_media a {
+  padding-bottom: 5px;
 }
 .footer .footerWrapper .social_media .fa {
   max-width: 64px;

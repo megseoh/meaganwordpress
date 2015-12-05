@@ -6,7 +6,7 @@
 	filter: $var;
 }
 
-@mixin transform ( $var ) {
+@mixin transform( $var ) {
 	-webkit-transform: $var;
 	-moz-transform: $var;
 	-ms-transform: $var;
